@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A86EC031-85F0-39D2-D05E-BFFA09B3BCAD" name="Articole">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 17:01:32 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CNP" id="84B627DD-D7D7-5894-6813-7B0C25DEF905">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 17:05:54 UTC</createdTime>
+<generatorID>65A69562-805F-CD8A-3E8B-F3251B33A009</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<referedAttribute>D9A9EBFD-870C-CF82-0B17-84890B249259</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data_Inceput" id="DC2DEA0F-8C77-58B3-1A26-A70AB79C2731">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 17:05:54 UTC</createdTime>
+<generatorID>65A69562-805F-CD8A-3E8B-F3251B33A009</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<referedAttribute>9D84DB1E-123D-8E25-C3BC-DE26C0C3B3C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tip" id="B5E614AA-32E1-4EFB-8551-52F67A3F40B5">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 17:05:54 UTC</createdTime>
+<generatorID>65A69562-805F-CD8A-3E8B-F3251B33A009</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<referedAttribute>5958E70B-773E-1B33-5BE5-354504BB5E29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Model" id="BEECBD71-3DCD-BB61-0442-3B750E9EBDC0">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 17:05:54 UTC</createdTime>
+<generatorID>65A69562-805F-CD8A-3E8B-F3251B33A009</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<referedAttribute>526FD8B0-1AA2-5591-A89B-79B14B92F680</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Acesoriu" id="A8109E75-9CF2-C5E4-BC58-A24945880F6E">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 17:07:55 UTC</createdTime>
+<generatorID>0866B2C0-76A8-205D-8CED-CC865DF8E84F</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<referedAttribute>45EA9506-B855-49A2-4BAF-BCB29675EA19</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DBF8DE2E-C106-BD06-B755-285C4DCE87B9" name="Inchiriere_Articole PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 17:05:54 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>84B627DD-D7D7-5894-6813-7B0C25DEF905</attributeRef>
+<attributeRef>DC2DEA0F-8C77-58B3-1A26-A70AB79C2731</attributeRef>
+<attributeRef>B5E614AA-32E1-4EFB-8551-52F67A3F40B5</attributeRef>
+<attributeRef>BEECBD71-3DCD-BB61-0442-3B750E9EBDC0</attributeRef>
+<attributeRef>A8109E75-9CF2-C5E4-BC58-A24945880F6E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

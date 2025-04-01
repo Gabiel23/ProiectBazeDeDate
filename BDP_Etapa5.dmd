@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BDP_Etapa5" id="319E4A70-D944-B3F5-B51C-D41BD694CBB5" version="3.5">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 14:53:04 UTC</createdTime>
+<ownerDesignName>BDP-etapa2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>319E4A70-D944-B3F5-B51C-D41BD694CBB5</designId>
+</OSDM_Design>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Client" directorySegmentName="seg_0" id="9BCF6194-F94F-2102-1225-C3CCFB704EBE">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CNP" id="05010CAC-0468-28AF-E6D8-912634AE9C07">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nume" id="11A8D4C8-DD3B-C3D2-1543-8095D241AFB9">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Numar_CI" id="52BFBEBC-B546-2985-EDFA-63178EAA58D4">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Prenume" id="7E765F80-3855-403A-43A6-33B6AC22DD3D">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Serie_CI" id="B1ECD610-5F35-D972-A8EF-831A3D63134B">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Client_PK" id="36DF08A3-EC4F-F54D-BCA8-E51C9534903C">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Client_Serie_CI_Numar_CI_UN" id="E1D48139-C479-221A-9A13-14DFBADA1AA9">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

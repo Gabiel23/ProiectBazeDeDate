@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="991F2721-EB76-77E6-3E75-2A9D9F8B6DB1" name="Bicicleta">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>2FBB52E6-0854-2A2A-4EE2-54EBFCBF9C46</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Tip" id="D9DCDA83-B94B-7944-C5B4-619E471166A5">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>B0CC0B86-4BCF-FE91-BF1F-43352CD8E3C1</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Bicicleta_Tip_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;mountain &apos;" description=""/>
+<valueDef value="cursiera" description=""/>
+<valueDef value="electrica" description=""/>
+<valueDef value="gravel" description=""/>
+<valueDef value="oras" description=""/>
+</listOfValues>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Model" id="094A0CE3-180C-1BFF-DB8A-B4862C7D769E">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>867518B4-52AE-ABD7-3937-EC2EB007105D</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Bicicleta_Model_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<listOfValues>
+<valueDef value="barbati" description=""/>
+<valueDef value="copii" description=""/>
+<valueDef value="dame" description=""/>
+</listOfValues>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tarif" id="AB60F45A-BD2A-DBB5-0A74-31424C26E538">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>09C693FD-BF8B-BDAD-D9E0-4224D8FB8BE6</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Bicicleta_Tarif_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<listOfValues>
+<valueDef value="1000" description=""/>
+<valueDef value="1250" description=""/>
+<valueDef value="1500" description=""/>
+<valueDef value="1750" description=""/>
+<valueDef value="2000" description=""/>
+<valueDef value="250" description=""/>
+<valueDef value="400" description=""/>
+<valueDef value="600" description=""/>
+<valueDef value="750" description=""/>
+<valueDef value="900" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stoc" id="D36382D0-5431-3FE2-A19C-ACA852608904">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>B675DBA3-0A77-BD71-A5B3-431AA2DCBC96</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Bicicleta_Stoc_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>10</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6EF3981-9584-D683-DC31-877358D7EBF5" name="Bicicleta_PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>6B435FF2-13A0-34D4-C746-2B3C90A09FC6</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9DCDA83-B94B-7944-C5B4-619E471166A5"/>
+<colUsage columnID="094A0CE3-180C-1BFF-DB8A-B4862C7D769E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

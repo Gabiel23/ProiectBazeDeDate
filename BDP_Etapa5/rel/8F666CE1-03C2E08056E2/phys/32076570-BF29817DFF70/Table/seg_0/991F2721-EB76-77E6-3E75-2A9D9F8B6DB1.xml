@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Bicicleta" directorySegmentName="seg_0" id="991F2721-EB76-77E6-3E75-2A9D9F8B6DB1">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Model" id="094A0CE3-180C-1BFF-DB8A-B4862C7D769E">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Tarif" id="AB60F45A-BD2A-DBB5-0A74-31424C26E538">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Stoc" id="D36382D0-5431-3FE2-A19C-ACA852608904">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Tip" id="D9DCDA83-B94B-7944-C5B4-619E471166A5">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Bicicleta_PK" id="A6EF3981-9584-D683-DC31-877358D7EBF5">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Contact" directorySegmentName="seg_0" id="E955560C-6D0D-723D-CE38-D74464871C5D">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Oras" id="4ADBF6E2-6DF5-7696-30A0-FA4D94433422">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Email" id="84F424AF-CC02-E5D1-6448-82B66ABE6E75">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Strada" id="B7955BBD-2BCA-0E7B-5B45-6CE771D7ED3F">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CNP" id="BED759C4-DB4B-1DF6-E1EC-790F4F3DBACF">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Telefon" id="E5854D14-2923-04A7-C627-474E063946F0">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Contact_Client_FK" id="B66D2C0F-C876-57D8-F956-90F115E32207">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Contact_PK" id="EB80537A-5789-6BE7-0FB2-CE4E8902CCF3">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Contact_Telefon_UN" id="A492CF98-7AA8-40FF-EAC5-3DD858E51AA0">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Contact_Email_UN" id="B571EFE1-694B-806E-2C05-7FBABE4B67BF">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

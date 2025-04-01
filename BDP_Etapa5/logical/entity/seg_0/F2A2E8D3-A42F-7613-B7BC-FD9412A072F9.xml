@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F2A2E8D3-A42F-7613-B7BC-FD9412A072F9" name="Client">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 14:53:53 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CNP" id="66170100-5DCE-07B4-B1E6-DB87660818C4">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 14:54:12 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Client_CNP_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(cnp, &apos;^\d{13}$&apos;)
+AND substr(cnp, 1, 1) IN (&apos;1&apos;, &apos;2&apos;, &apos;5&apos;, &apos;6&apos;)
+AND TO_NUMBER(substr(cnp, 4, 2)) BETWEEN 1 AND 12
+AND ( 
+    ( TO_NUMBER(substr(cnp, 4, 2)) IN (1, 3, 5, 7, 8, 10, 12)
+      AND TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 31 )
+    OR
+    ( TO_NUMBER(substr(cnp, 4, 2)) IN (4, 6, 9, 11)
+      AND TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 30 )
+    OR 
+    ( TO_NUMBER(substr(cnp, 4, 2)) = 2
+      AND ( 
+          ( substr(cnp, 1, 1) IN (&apos;1&apos;, &apos;2&apos;) 
+            AND MOD(TO_NUMBER(&apos;1900&apos; || substr(cnp, 2, 2)), 4) = 0
+            AND ( MOD(TO_NUMBER(&apos;1900&apos; || substr(cnp, 2, 2)), 100) != 0 
+                   OR MOD(TO_NUMBER(&apos;1900&apos; || substr(cnp, 2, 2)), 400) = 0 )
+            AND TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 29 )
+          OR
+          ( substr(cnp, 1, 1) IN (&apos;5&apos;, &apos;6&apos;) 
+            AND MOD(TO_NUMBER(&apos;2000&apos; || substr(cnp, 2, 2)), 4) = 0
+            AND ( MOD(TO_NUMBER(&apos;2000&apos; || substr(cnp, 2, 2)), 100) != 0 
+                   OR MOD(TO_NUMBER(&apos;2000&apos; || substr(cnp, 2, 2)), 400) = 0 )
+            AND TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 29 )
+          OR 
+          ( TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 28 )
+      )
+    )
+)
+"/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Serie_CI" id="CF3B5E76-9913-C413-A852-47BCAE6BCDDC">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 14:55:29 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Client_Serie_CI_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="XT" description=""/>
+<valueDef value="ZT" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numar_CI" id="F01E300C-E887-516D-74D9-6D1DA1A5A074">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 14:55:57 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Client_Numar_CI_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Numar_CI &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nume" id="5AF2E9F9-3C7C-2141-62EB-FD4AE812476F">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 14:56:35 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Client_Nume_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Nume, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Prenume" id="2FC52E11-0E28-3165-70F6-CE2A3FB31382">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 14:56:57 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Client_Prenume_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Prenume, &apos;^[A-Za-z -]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7545583F-C89C-670F-7EBE-B56B2522E738" name="ID_Card_UK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 15:12:19 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="false"/>
+</engineerTo>
+<newElementsIDs>CF3B5E76-9913-C413-A852-47BCAE6BCDDC,F01E300C-E887-516D-74D9-6D1DA1A5A074</newElementsIDs>
+<usedAttributes>
+<attributeRef>CF3B5E76-9913-C413-A852-47BCAE6BCDDC</attributeRef>
+<attributeRef>F01E300C-E887-516D-74D9-6D1DA1A5A074</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AC0521F7-2853-522D-A713-6B6CB38EAB07" name="CNP_PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 15:20:13 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>66170100-5DCE-07B4-B1E6-DB87660818C4</newElementsIDs>
+<usedAttributes>
+<attributeRef>66170100-5DCE-07B4-B1E6-DB87660818C4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

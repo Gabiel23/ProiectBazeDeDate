@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E955560C-6D0D-723D-CE38-D74464871C5D" name="Contact">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>2747D7DF-D6BC-4D19-150D-DC7CCD7E599D</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Oras" id="4ADBF6E2-6DF5-7696-30A0-FA4D94433422">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>5153D3BE-DAB8-0CDC-1A1C-333FAEDF4179</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Contact_Oras_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(oras, &apos;^[A-Za-z0-9 -]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Strada" id="B7955BBD-2BCA-0E7B-5B45-6CE771D7ED3F">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>CEF7189E-31F4-ECDC-0A97-BB9E55051133</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="84F424AF-CC02-E5D1-6448-82B66ABE6E75">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>20562C24-233B-440C-5DD9-6A2E52B34CDD</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Contact_Email_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefon" id="E5854D14-2923-04A7-C627-474E063946F0">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>718AD234-2AD9-0EB3-4CD0-E451F37420DF</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Contact_Telefon_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNP" id="BED759C4-DB4B-1DF6-E1EC-790F4F3DBACF">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>9C85A62B-D0F7-624A-0916-158C2A51607F</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B499AB1-EC54-FCC1-F4AE-2FBF0A00E360" referredColumn="05010CAC-0468-28AF-E6D8-912634AE9C07"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB80537A-5789-6BE7-0FB2-CE4E8902CCF3" name="Contact_PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>CC5A9A88-D0B1-7879-A2AE-28BE1FD863F5</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BED759C4-DB4B-1DF6-E1EC-790F4F3DBACF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B571EFE1-694B-806E-2C05-7FBABE4B67BF" name="Contact_Email_UN">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>304C7C7C-BD48-3364-3BC2-E5350310F973</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84F424AF-CC02-E5D1-6448-82B66ABE6E75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A492CF98-7AA8-40FF-EAC5-3DD858E51AA0" name="Contact_Telefon_UN">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>E613AA5E-9EC2-3D93-2DCD-DD44FDBBAD4D</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5854D14-2923-04A7-C627-474E063946F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B66D2C0F-C876-57D8-F956-90F115E32207" name="Contact_Client_FK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>08507BAF-0510-4E35-DBA4-4B323CB579BA</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BED759C4-DB4B-1DF6-E1EC-790F4F3DBACF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

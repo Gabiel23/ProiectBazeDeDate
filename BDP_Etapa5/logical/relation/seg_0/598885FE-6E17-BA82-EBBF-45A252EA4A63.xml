@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Bicicleta_Inchiriere_FK" directorySegmentName="seg_0" id="598885FE-6E17-BA82-EBBF-45A252EA4A63">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:56:38 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<sourcePk>6B435FF2-13A0-34D4-C746-2B3C90A09FC6</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>este inchiriata</nameOnSource>
+<nameOnTarget>are alocat</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2FBB52E6-0854-2A2A-4EE2-54EBFCBF9C46</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7BACFF6B-9433-51B4-0648-6B8B6042E75D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

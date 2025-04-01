@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Client_Inchiriere_FK" directorySegmentName="seg_0" id="F8406F45-A554-D88D-E9A1-71AFFE9490C2">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:47:17 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<sourcePk>AC0521F7-2853-522D-A713-6B6CB38EAB07</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>efectueaza</nameOnSource>
+<nameOnTarget>este efectuata</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F2A2E8D3-A42F-7613-B7BC-FD9412A072F9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7BACFF6B-9433-51B4-0648-6B8B6042E75D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

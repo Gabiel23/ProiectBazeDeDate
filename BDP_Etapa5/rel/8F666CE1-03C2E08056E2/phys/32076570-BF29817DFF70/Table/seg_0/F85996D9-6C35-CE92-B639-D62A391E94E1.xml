@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Articole" directorySegmentName="seg_0" id="F85996D9-6C35-CE92-B639-D62A391E94E1">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Data_Inceput" id="0F20215A-E4E5-ECB7-817B-438ADF919F47">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Tip" id="79F9D72E-6EC2-A5F5-6081-5240F3E1571A">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_Acesoriu" id="84D7E20C-919A-08E9-03B2-E50949F7457F">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Model" id="A7C6154F-EFB7-5DAA-9B2A-07DC123FD74C">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CNP" id="EC013F8C-DF24-14CF-012A-D3418DA104B2">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Articole_Accesoriu_FK" id="5D0E669E-5957-5991-BD81-0B1E253C9678">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Articole_Inchiriere_FK" id="7EEAF7BC-C245-776F-A36E-C9D485C21FD6">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Articole_PK" id="20BFAD83-54C0-2919-A30F-724A32989358">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

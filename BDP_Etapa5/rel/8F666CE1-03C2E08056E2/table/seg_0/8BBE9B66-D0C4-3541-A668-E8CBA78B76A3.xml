@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BBE9B66-D0C4-3541-A668-E8CBA78B76A3" name="Inchiriere">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>7BACFF6B-9433-51B4-0648-6B8B6042E75D</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Data_Inceput" id="6EB05738-7777-4D99-1C4D-DF4774B71F3C">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>9D84DB1E-123D-8E25-C3BC-DE26C0C3B3C7</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_Sfarsit" id="EF698D8F-E7DC-F7F9-0D67-CED3139E1FEA">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>2A36A1B1-2FE1-986C-AF5E-D8707C761D8D</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Inchiriere_Data_Sfarsit_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Data_Inceput &lt;= Data_Sfarsit"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cost" id="5D3F4153-7C8F-EE8D-1F6A-CD82EC8D202C">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>60C139F8-34B5-99BA-0BD8-8AE7E2D71373</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNP" id="05304DCE-EDB9-0E56-812C-2481129389C4">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>D9A9EBFD-870C-CF82-0B17-84890B249259</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="454F831B-51E4-2EE5-674E-2BD6794CCB79" referredColumn="05010CAC-0468-28AF-E6D8-912634AE9C07"/>
+</associations>
+</Column>
+<Column name="Tip" id="88B634D1-D145-D417-E199-FDD1DD7EC7BF">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>5958E70B-773E-1B33-5BE5-354504BB5E29</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="68346E18-81EE-F829-6ACF-12705C72A3EB" referredColumn="D9DCDA83-B94B-7944-C5B4-619E471166A5"/>
+</associations>
+</Column>
+<Column name="Model" id="DC3DA5F8-F67D-4723-8366-1C8C8014C7C1">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>526FD8B0-1AA2-5591-A89B-79B14B92F680</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="68346E18-81EE-F829-6ACF-12705C72A3EB" referredColumn="094A0CE3-180C-1BFF-DB8A-B4862C7D769E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61D568C7-0299-A333-735C-04F746D5B8AB" name="Inchiriere_PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>FAA673DA-14EE-1ADF-8EF7-F936F9D7E083</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05304DCE-EDB9-0E56-812C-2481129389C4"/>
+<colUsage columnID="6EB05738-7777-4D99-1C4D-DF4774B71F3C"/>
+<colUsage columnID="88B634D1-D145-D417-E199-FDD1DD7EC7BF"/>
+<colUsage columnID="DC3DA5F8-F67D-4723-8366-1C8C8014C7C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="605ABEBD-FB4F-05A8-A9AD-F1BF65522088" name="Inchiriere_Bicicleta_FK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>598885FE-6E17-BA82-EBBF-45A252EA4A63</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88B634D1-D145-D417-E199-FDD1DD7EC7BF"/>
+<colUsage columnID="DC3DA5F8-F67D-4723-8366-1C8C8014C7C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A27D932-A56E-6D92-A747-7E7B7EE3C9A9" name="Inchiriere_Client_FK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>F8406F45-A554-D88D-E9A1-71AFFE9490C2</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05304DCE-EDB9-0E56-812C-2481129389C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

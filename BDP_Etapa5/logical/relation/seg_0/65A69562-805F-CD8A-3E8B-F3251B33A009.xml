@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Inchiriere_Articole_FK" directorySegmentName="seg_0" id="65A69562-805F-CD8A-3E8B-F3251B33A009">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 17:05:54 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<sourcePk>FAA673DA-14EE-1ADF-8EF7-F936F9D7E083</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>include</nameOnSource>
+<nameOnTarget>apartine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7BACFF6B-9433-51B4-0648-6B8B6042E75D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A86EC031-85F0-39D2-D05E-BFFA09B3BCAD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

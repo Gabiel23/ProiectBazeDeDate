@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="653A1E58-59E9-845D-A272-2FABE5CC6E44" name="Accesoriu">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>519ABD04-D46B-38E0-F5E3-BC4F983616B4</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Acesoriu" id="EB86C992-B673-041F-51E9-301B0DEFFAB9">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>45EA9506-B855-49A2-4BAF-BCB29675EA19</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>1000</autoIncrementStartWith>
+<autoIncrementIncrementBy>37</autoIncrementIncrementBy>
+<autoIncrementMinValue>1000</autoIncrementMinValue>
+<autoIncrementMaxValue>1500</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Denumire" id="05D9CBAD-824E-C258-69D6-B1C3CB36AE5B">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>5BE59348-A8EB-79B5-FFA3-BFB8E0362B9B</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Acesoriu_Denumire_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="Casca" description=""/>
+<valueDef value="Claxon" description=""/>
+<valueDef value="Cosulet" description=""/>
+<valueDef value="Cotiere" description=""/>
+<valueDef value="Genunchiere" description=""/>
+<valueDef value="Lumini" description=""/>
+<valueDef value="Sticla de apa" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tarif" id="1E42E4AE-47C2-C4D9-1E15-11D5F7B355F8">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>43831EE9-5031-69B1-F967-E7102BA1A1A5</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Accesoriu_Tarif_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<listOfValues>
+<valueDef value="100" description=""/>
+<valueDef value="25" description=""/>
+<valueDef value="50" description=""/>
+<valueDef value="75" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stoc" id="846650F7-3797-A1D8-6AF5-84B8E6CF0B23">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>BC222428-138D-CF70-BAE8-A0DDA226FE11</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Accesoriu_Stoc_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Stoc &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1B73FDA-ABC5-480B-4535-F3A99B539AD7" name="Accesoriu_PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>B95F0D09-4315-8443-3E03-3B20FD4A7D8D</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB86C992-B673-041F-51E9-301B0DEFFAB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D73827AB-7D80-DF65-BD6B-0253D8BCDAC5" name="Accesoriu_Denumire_UN">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>32AA35C7-0D4A-8E05-4E08-0C265D1D575B</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05D9CBAD-824E-C258-69D6-B1C3CB36AE5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9BCF6194-F94F-2102-1225-C3CCFB704EBE" name="Client">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>F2A2E8D3-A42F-7613-B7BC-FD9412A072F9</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CNP" id="05010CAC-0468-28AF-E6D8-912634AE9C07">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>66170100-5DCE-07B4-B1E6-DB87660818C4</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Client_CNP_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(cnp, &apos;^\d{13}$&apos;)
+AND substr(cnp, 1, 1) IN (&apos;1&apos;, &apos;2&apos;, &apos;5&apos;, &apos;6&apos;)
+AND TO_NUMBER(substr(cnp, 4, 2)) BETWEEN 1 AND 12
+AND ( 
+    ( TO_NUMBER(substr(cnp, 4, 2)) IN (1, 3, 5, 7, 8, 10, 12)
+      AND TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 31 )
+    OR
+    ( TO_NUMBER(substr(cnp, 4, 2)) IN (4, 6, 9, 11)
+      AND TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 30 )
+    OR 
+    ( TO_NUMBER(substr(cnp, 4, 2)) = 2
+      AND ( 
+          ( substr(cnp, 1, 1) IN (&apos;1&apos;, &apos;2&apos;) 
+            AND MOD(TO_NUMBER(&apos;1900&apos; || substr(cnp, 2, 2)), 4) = 0
+            AND ( MOD(TO_NUMBER(&apos;1900&apos; || substr(cnp, 2, 2)), 100) != 0 
+                   OR MOD(TO_NUMBER(&apos;1900&apos; || substr(cnp, 2, 2)), 400) = 0 )
+            AND TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 29 )
+          OR
+          ( substr(cnp, 1, 1) IN (&apos;5&apos;, &apos;6&apos;) 
+            AND MOD(TO_NUMBER(&apos;2000&apos; || substr(cnp, 2, 2)), 4) = 0
+            AND ( MOD(TO_NUMBER(&apos;2000&apos; || substr(cnp, 2, 2)), 100) != 0 
+                   OR MOD(TO_NUMBER(&apos;2000&apos; || substr(cnp, 2, 2)), 400) = 0 )
+            AND TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 29 )
+          OR 
+          ( TO_NUMBER(substr(cnp, 6, 2)) BETWEEN 1 AND 28 )
+      )
+    )
+)
+"/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Serie_CI" id="B1ECD610-5F35-D972-A8EF-831A3D63134B">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>CF3B5E76-9913-C413-A852-47BCAE6BCDDC</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Client_Serie_CI_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="XT" description=""/>
+<valueDef value="ZT" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numar_CI" id="52BFBEBC-B546-2985-EDFA-63178EAA58D4">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>F01E300C-E887-516D-74D9-6D1DA1A5A074</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Client_Numar_CI_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Numar_CI &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume" id="11A8D4C8-DD3B-C3D2-1543-8095D241AFB9">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>5AF2E9F9-3C7C-2141-62EB-FD4AE812476F</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Client_Nume_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Nume, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prenume" id="7E765F80-3855-403A-43A6-33B6AC22DD3D">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>2FC52E11-0E28-3165-70F6-CE2A3FB31382</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<constraintName>Client_Prenume_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Prenume, &apos;^[A-Za-z -]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="36DF08A3-EC4F-F54D-BCA8-E51C9534903C" name="Client_PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>AC0521F7-2853-522D-A713-6B6CB38EAB07</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05010CAC-0468-28AF-E6D8-912634AE9C07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E1D48139-C479-221A-9A13-14DFBADA1AA9" name="Client_Serie_CI_Numar_CI_UN">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>7545583F-C89C-670F-7EBE-B56B2522E738</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1ECD610-5F35-D972-A8EF-831A3D63134B"/>
+<colUsage columnID="52BFBEBC-B546-2985-EDFA-63178EAA58D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

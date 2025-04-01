@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3144F85E-3729-53CB-4F2F-410BA4F45E80" containerWithKeyObject="F85996D9-6C35-CE92-B639-D62A391E94E1" localFKIndex="5D0E669E-5957-5991-BD81-0B1E253C9678" name="Articole_Accesoriu_FK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>0866B2C0-76A8-205D-8CED-CC865DF8E84F</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<referredTableLongName>Accesoriu</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>653A1E58-59E9-845D-A272-2FABE5CC6E44</referredTableID>
+<keyObject>F1B73FDA-ABC5-480B-4535-F3A99B539AD7</keyObject>
+<referredKeyID>F1B73FDA-ABC5-480B-4535-F3A99B539AD7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Acesoriu</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

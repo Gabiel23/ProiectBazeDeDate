@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F85996D9-6C35-CE92-B639-D62A391E94E1" name="Articole">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>A86EC031-85F0-39D2-D05E-BFFA09B3BCAD</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CNP" id="EC013F8C-DF24-14CF-012A-D3418DA104B2">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>84B627DD-D7D7-5894-6813-7B0C25DEF905</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32A634EE-18AB-F6BA-DE2E-DFD75E54FF1C" referredColumn="05304DCE-EDB9-0E56-812C-2481129389C4"/>
+</associations>
+</Column>
+<Column name="Data_Inceput" id="0F20215A-E4E5-ECB7-817B-438ADF919F47">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>DC2DEA0F-8C77-58B3-1A26-A70AB79C2731</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32A634EE-18AB-F6BA-DE2E-DFD75E54FF1C" referredColumn="6EB05738-7777-4D99-1C4D-DF4774B71F3C"/>
+</associations>
+</Column>
+<Column name="Tip" id="79F9D72E-6EC2-A5F5-6081-5240F3E1571A">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>B5E614AA-32E1-4EFB-8551-52F67A3F40B5</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32A634EE-18AB-F6BA-DE2E-DFD75E54FF1C" referredColumn="88B634D1-D145-D417-E199-FDD1DD7EC7BF"/>
+</associations>
+</Column>
+<Column name="Model" id="A7C6154F-EFB7-5DAA-9B2A-07DC123FD74C">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>BEECBD71-3DCD-BB61-0442-3B750E9EBDC0</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32A634EE-18AB-F6BA-DE2E-DFD75E54FF1C" referredColumn="DC3DA5F8-F67D-4723-8366-1C8C8014C7C1"/>
+</associations>
+</Column>
+<Column name="ID_Acesoriu" id="84D7E20C-919A-08E9-03B2-E50949F7457F">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>A8109E75-9CF2-C5E4-BC58-A24945880F6E</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3144F85E-3729-53CB-4F2F-410BA4F45E80" referredColumn="EB86C992-B673-041F-51E9-301B0DEFFAB9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20BFAD83-54C0-2919-A30F-724A32989358" name="Articole_PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>DBF8DE2E-C106-BD06-B755-285C4DCE87B9</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC013F8C-DF24-14CF-012A-D3418DA104B2"/>
+<colUsage columnID="0F20215A-E4E5-ECB7-817B-438ADF919F47"/>
+<colUsage columnID="79F9D72E-6EC2-A5F5-6081-5240F3E1571A"/>
+<colUsage columnID="A7C6154F-EFB7-5DAA-9B2A-07DC123FD74C"/>
+<colUsage columnID="84D7E20C-919A-08E9-03B2-E50949F7457F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D0E669E-5957-5991-BD81-0B1E253C9678" name="Articole_Accesoriu_FK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>0866B2C0-76A8-205D-8CED-CC865DF8E84F</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84D7E20C-919A-08E9-03B2-E50949F7457F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EEAF7BC-C245-776F-A36E-C9D485C21FD6" name="Articole_Inchiriere_FK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>65A69562-805F-CD8A-3E8B-F3251B33A009</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC013F8C-DF24-14CF-012A-D3418DA104B2"/>
+<colUsage columnID="0F20215A-E4E5-ECB7-817B-438ADF919F47"/>
+<colUsage columnID="79F9D72E-6EC2-A5F5-6081-5240F3E1571A"/>
+<colUsage columnID="A7C6154F-EFB7-5DAA-9B2A-07DC123FD74C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

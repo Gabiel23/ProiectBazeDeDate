@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="32A634EE-18AB-F6BA-DE2E-DFD75E54FF1C" containerWithKeyObject="F85996D9-6C35-CE92-B639-D62A391E94E1" localFKIndex="7EEAF7BC-C245-776F-A36E-C9D485C21FD6" name="Articole_Inchiriere_FK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>65A69562-805F-CD8A-3E8B-F3251B33A009</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<referredTableLongName>Inchiriere</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8BBE9B66-D0C4-3541-A668-E8CBA78B76A3</referredTableID>
+<keyObject>61D568C7-0299-A333-735C-04F746D5B8AB</keyObject>
+<referredKeyID>61D568C7-0299-A333-735C-04F746D5B8AB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CNP,Data_Inceput,Tip,Model</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

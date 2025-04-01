@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="68346E18-81EE-F829-6ACF-12705C72A3EB" containerWithKeyObject="8BBE9B66-D0C4-3541-A668-E8CBA78B76A3" localFKIndex="605ABEBD-FB4F-05A8-A9AD-F1BF65522088" name="Inchiriere_Bicicleta_FK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:03:52 UTC</createdTime>
+<generatorID>598885FE-6E17-BA82-EBBF-45A252EA4A63</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<referredTableLongName>Bicicleta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>991F2721-EB76-77E6-3E75-2A9D9F8B6DB1</referredTableID>
+<keyObject>A6EF3981-9584-D683-DC31-877358D7EBF5</keyObject>
+<referredKeyID>A6EF3981-9584-D683-DC31-877358D7EBF5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Tip,Model</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

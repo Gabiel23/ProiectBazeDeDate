@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2747D7DF-D6BC-4D19-150D-DC7CCD7E599D" name="Contact">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 15:41:53 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Oras" id="5153D3BE-DAB8-0CDC-1A1C-333FAEDF4179">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:01:18 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Contact_Oras_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(oras, &apos;^[A-Za-z0-9 -]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Strada" id="CEF7189E-31F4-ECDC-0A97-BB9E55051133">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:02:58 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="20562C24-233B-440C-5DD9-6A2E52B34CDD">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:03:21 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Contact_Email_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefon" id="718AD234-2AD9-0EB3-4CD0-E451F37420DF">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:03:39 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Contact_Telefon_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CNP" id="9C85A62B-D0F7-624A-0916-158C2A51607F">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:23:42 UTC</createdTime>
+<generatorID>08507BAF-0510-4E35-DBA4-4B323CB579BA</generatorID>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<referedAttribute>66170100-5DCE-07B4-B1E6-DB87660818C4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="304C7C7C-BD48-3364-3BC2-E5350310F973" name="Contact_Email_UK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:13:00 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="false"/>
+</engineerTo>
+<newElementsIDs>20562C24-233B-440C-5DD9-6A2E52B34CDD</newElementsIDs>
+<usedAttributes>
+<attributeRef>20562C24-233B-440C-5DD9-6A2E52B34CDD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E613AA5E-9EC2-3D93-2DCD-DD44FDBBAD4D" name="Contact_Telefon_UK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:14:04 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="false"/>
+</engineerTo>
+<newElementsIDs>718AD234-2AD9-0EB3-4CD0-E451F37420DF</newElementsIDs>
+<usedAttributes>
+<attributeRef>718AD234-2AD9-0EB3-4CD0-E451F37420DF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CC5A9A88-D0B1-7879-A2AE-28BE1FD863F5" name="Contact PK">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-11-10 16:32:46 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C85A62B-D0F7-624A-0916-158C2A51607F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2FBB52E6-0854-2A2A-4EE2-54EBFCBF9C46" name="Bicicleta">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 15:02:35 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Tip" id="B0CC0B86-4BCF-FE91-BF1F-43352CD8E3C1">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 15:04:23 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Bicicleta_Tip_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;mountain &apos;" description=""/>
+<valueDef value="cursiera" description=""/>
+<valueDef value="electrica" description=""/>
+<valueDef value="gravel" description=""/>
+<valueDef value="oras" description=""/>
+</listOfValues>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Model" id="867518B4-52AE-ABD7-3937-EC2EB007105D">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 15:03:46 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Bicicleta_Model_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<listOfValues>
+<valueDef value="barbati" description=""/>
+<valueDef value="copii" description=""/>
+<valueDef value="dame" description=""/>
+</listOfValues>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tarif" id="09C693FD-BF8B-BDAD-D9E0-4224D8FB8BE6">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 15:04:59 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Bicicleta_Tarif_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<listOfValues>
+<valueDef value="1000" description=""/>
+<valueDef value="1250" description=""/>
+<valueDef value="1500" description=""/>
+<valueDef value="1750" description=""/>
+<valueDef value="2000" description=""/>
+<valueDef value="250" description=""/>
+<valueDef value="400" description=""/>
+<valueDef value="600" description=""/>
+<valueDef value="750" description=""/>
+<valueDef value="900" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Stoc" id="B675DBA3-0A77-BD71-A5B3-431AA2DCBC96">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 15:05:17 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="true"/>
+</engineerTo>
+<constraintName>Bicicleta_Stoc_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>10</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6B435FF2-13A0-34D4-C746-2B3C90A09FC6" name="ID_bicicleta">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-10-27 15:22:59 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8F666CE1-94E6-ECFC-E41B-03C2E08056E2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>B0CC0B86-4BCF-FE91-BF1F-43352CD8E3C1,867518B4-52AE-ABD7-3937-EC2EB007105D</newElementsIDs>
+<usedAttributes>
+<attributeRef>B0CC0B86-4BCF-FE91-BF1F-43352CD8E3C1</attributeRef>
+<attributeRef>867518B4-52AE-ABD7-3937-EC2EB007105D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

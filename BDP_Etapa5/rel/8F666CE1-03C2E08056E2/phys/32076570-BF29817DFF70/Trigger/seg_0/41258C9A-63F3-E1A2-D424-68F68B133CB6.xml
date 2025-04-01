@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Inchiriere_Data" directorySegmentName="seg_0" id="41258C9A-63F3-E1A2-D424-68F68B133CB6">
+<createdBy>ROSE261</createdBy>
+<createdTime>2024-12-08 18:06:03 UTC</createdTime>
+<ownerDesignName>BDP_Etapa5</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    IF (:new.Data_Inceput <= SYSDATE) THEN
+        RAISE_APPLICATION_ERROR(-20001,
+            'Data invalida: ' || TO_CHAR(:new.Data_Inceput, 'DD.MM.YYYY HH24:MI:SS') ||
+            ' trebuie sa fie mai mare decat data curenta.');
+    END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>8BBE9B66-D0C4-3541-A668-E8CBA78B76A3</table>
+</TriggerOraclev10g>
